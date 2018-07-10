@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Button_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <in.shadowfax.proswipebutton.ProSwipeButton
+                android:id="@+id/awesome_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                app:bg_color="@android:color/holo_blue_dark"
+                app:btn_text="Swipe Button"
+                android:layout_marginBottom="10dp"/>
+            <com.basel.DualButton.DualButton
+                app:textFirst="Dual Button START"
+                app:textSecond="Dual Button CANCEL"
+                app:textColorFirst="#ffffff"
+                app:textColorSecond="#03A9F4"
+                app:backgroundColorFirst="#03A9F4"
+                app:backgroundColorSecond="#ffffff"
+                android:id="@+id/dualBtn"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:layout_margin="10dp"
+                android:gravity="center|center_horizontal"
+                android:layout_gravity="center"/>
+
+            <com.emrekose.recordbutton.RecordButton
+                android:id="@+id/recordBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:buttonGap="10dp"
+                app:buttonRadius="40dp"
+                app:maxMilisecond="10000"
+                app:progressColor="@color/colorPrimary"
+                app:progressStroke="15"
+                app:recordIcon="@drawable/ic_keyboard_voice_white_36dp"
+                android:layout_margin="10dp"
+                android:gravity="center|center_horizontal"
+                android:layout_gravity="center"/>
+
+
+
+            <io.ghyeok.stickyswitch.widget.StickySwitch
+                android:id="@+id/sticky_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:ss_animationDuration="600"
+                app:ss_iconPadding="18dp"
+                app:ss_iconSize="22dp"
+                app:ss_leftIcon="@drawable/ic_male"
+                app:ss_leftText="Male"
+                app:ss_rightIcon="@drawable/ic_female"
+                app:ss_rightText="Female"
+                app:ss_selectedTextSize="14sp"
+                app:ss_sliderBackgroundColor="@color/colorSliderBackground"
+                app:ss_switchColor="@color/colorSwitchColor"
+                app:ss_textColor="@color/colorTextColor"
+                app:ss_textSize="12sp"
+                app:ss_animationType="line"
+                android:layout_margin="10dp"
+                android:gravity="center|center_horizontal"
+                android:layout_gravity="center"/>
+
+            <com.ebanx.swipebtn.SwipeButton
+                android:id="@+id/swipe_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:inner_text="SWIPE"
+                app:inner_text_color="@android:color/white"
+                app:inner_text_size="16sp"
+                app:inner_text_top_padding="18dp"
+                app:inner_text_bottom_padding="18dp"
+                app:inner_text_background="@drawable/shape_rounded"
+                app:button_image_height="60dp"
+                app:button_image_width="100dp"
+                app:button_image_disabled="@drawable/ic_lock_open_black_24dp"
+                app:button_image_enabled="@drawable/ic_lock_outline_black_24dp"
+                app:button_left_padding="20dp"
+                app:button_right_padding="20dp"
+                app:button_top_padding="20dp"
+                app:button_bottom_padding="20dp"
+                app:button_background="@drawable/shape_button"
+                app:initial_state="disabled"
+                app:has_activate_state="true"
+                android:layout_margin="10dp"
+                android:gravity="center|center_horizontal"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
